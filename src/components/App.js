@@ -10,7 +10,7 @@ function App() {
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = useState(false);
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
 
-  const [selectedCard, setSelectedCard] = useState();
+  const [selectedCard, setSelectedCard] = useState(null);
 
   const handleEditAvatarClick = function () {
     setIsEditAvatarPopupOpen(!isEditAvatarPopupOpen);
@@ -25,7 +25,7 @@ function App() {
     setIsAddPlacePopupOpen(false);
     setIsEditProfilePopupOpen(false);
     setIsEditAvatarPopupOpen(false);
-    setSelectedCard();
+    setSelectedCard(null);
   };
   const handleCardClick = function (card) {
     setSelectedCard(card);
@@ -41,6 +41,7 @@ function App() {
           onEditAvatar={handleEditAvatarClick}
           handleCardClick={handleCardClick}
         />
+        <Footer />
         <PopupWithForm
           title="Редактировать профиль"
           name="profile-popup"
@@ -117,7 +118,6 @@ function App() {
           />
         </PopupWithForm>
         <ImagePopup card={selectedCard} onClose={closeAllPopups} />
-        <Footer />
       </div>
     </div>
   );
