@@ -171,11 +171,13 @@ function App() {
     if (token) {
       checkTokenValidity(token)
       .then((res) => {
-        // возможно хендллогин сюда
         setLoggedIn(true);
         setEmail(res.data.email);
         navigate('/');
       })
+      .catch((error) => {
+        console.log(error);
+    })
     }
   }
 
