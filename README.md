@@ -1,4 +1,4 @@
-# Одиннадцатая проектная работа по теме "Интерфейсы с использованием React"
+# Двенадцатая проектная работа по теме "Основы бэкенда для фронтенд-разрабочтиков"
 
 Проект призван помочь студенту закрепить навыки, пройденные в двенадцатом спринте курса "Веб-разработчик".
 
@@ -21,6 +21,8 @@
 - API;
 - Promises;
 - React;
+- React Router;
+- REST
 - и другие.
 
-Ссылка на GitHub Pages проекта - [https://hypnogit.github.io/mesto-react/](https://hypnogit.github.io/mesto-react/)
+Ссылка на GitHub Pages проекта - [https://hypnogit.github.io/react-mesto-auth/](https://hypnogit.github.io/react-mesto-auth/)
